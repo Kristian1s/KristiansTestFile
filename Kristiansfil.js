@@ -1,11 +1,11 @@
 $(function () {
-  $("#velkommen").hover(function () {
-    $("#velkommen").hover(bigger());
+  $("h1").hover(function () {
+    $("h1").hover(bigger());
   });
 });
 
 function bigger() {
-  $("#velkommen").toggleClass("size");
+  $("h1").toggleClass("size");
 }
 
 $(function () {
