@@ -42,8 +42,14 @@ function animate1() {
     );
   });
 }
-function byeButton(){
-    $(this).click(function(){
-        $("button").slideUp("slow");
-    })
+function byeButton() {
+  $(this).click(function () {
+    $("button").slideUp("slow");
+  });
+  hideP();  
+}
+
+function hideP() {
+  $("p").hide();
+  byeButton()
 }
