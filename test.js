@@ -1,12 +1,12 @@
-function green(button){
-    $(button).addClass("list-group-item-success");
-
+function sum() {
+let res =1 ;
+if(arguments.length==0){
+    return 0;
 }
-function red(button){
-    $(button).addClass("list-group-item-danger");
-
+for(let i=0; i<arguments.length; i++){
+    res*= arguments[i];
 }
-function yellow(button){
-    $(button).addClass("list-group-item-warning");
-
+return res;
 }
+const  x = sum(1,23,45);
+console.log(sum(1,23,45));
